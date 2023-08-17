@@ -13,6 +13,14 @@
 //! let tree = parser.parse(code, None).unwrap();
 //!
 //! let code = r"
+//! Name|Age|Salary
+//! John Doe|30|120000
+//! ";
+//! let mut parser = tree_sitter::Parser::new();
+//! parser.set_language(tree_sitter_csv::language_tsv()).expect("Error loading PSV grammar");
+//! let tree = parser.parse(code, None).unwrap();
+//!
+//! let code = r"
 //! Name\tAge\tSalary
 //! John Doe\t30\t120000
 //! ";
