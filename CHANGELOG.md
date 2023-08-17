@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/amaanq/tree-sitter-csv/compare/v1.0.0...v1.1.0) (2023-08-17)
+
+
+### Features
+
+* add PSV support ([1e1c291](https://github.com/amaanq/tree-sitter-csv/commit/1e1c291e6488867322442f6ca6f445e05fc52253))
+
 ## 1.0.0 (2023-08-17)
 
 
