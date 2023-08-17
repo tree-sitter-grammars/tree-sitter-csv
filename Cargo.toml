@@ -1,0 +1,32 @@
+[package]
+name = "tree-sitter-csv"
+description = "CSV & TSV grammar for tree-sitter"
+version = "1.0.0"
+authors = ["Amaan Qureshi <amaanq12@gmail.com>"]
+keywords = ["incremental", "parsing", "csv", "tsv"]
+categories = ["parsing", "text-editors"]
+repository = "https://github.com/amaanq/tree-sitter-csv"
+edition = "2021"
+license = "MIT"
+autoexamples = false
+
+build = "bindings/rust/build.rs"
+include = [
+	"common",
+	"bindings/rust/*",
+	"csv/grammar.js",
+	"csv/src/*",
+	"csv/queries/*",
+	"tsv/grammar.js",
+	"tsv/src/*",
+	"tsv/queries/*",
+]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter = "~0.20.10"
+
+[build-dependencies]
+cc = "~1.0.82"
