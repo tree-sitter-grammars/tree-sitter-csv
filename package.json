@@ -1,12 +1,13 @@
 {
   "name": "tree-sitter-csv",
   "version": "1.0.0",
-  "description": "CSV & TSV grammar for tree-sitter",
+  "description": "CSV, PSV, & TSV grammar for tree-sitter",
   "main": "bindings/node",
   "keywords": [
     "parsing",
     "incremental",
     "csv",
+    "psv",
     "tsv"
   ],
   "author": "Amaan Qureshi <amaanq12@gmail.com>",
@@ -20,15 +21,17 @@
     "tree-sitter-cli": "^0.20.8"
   },
   "scripts": {
-    "build": "npm run build-csv && npm run build-tsv",
+    "build": "npm run build-csv && npm run build-psv && npm run build-tsv",
     "build-csv": "cd csv && npx tree-sitter generate --no-bindings",
+    "build-psv": "cd psv && npx tree-sitter generate --no-bindings",
     "build-tsv": "cd tsv && npx tree-sitter generate --no-bindings",
     "lint": "eslint common/define-grammar.js csv/grammar.js tsv/grammar.js",
-    "test-load": "node -e \"console.log(require('./csv').name, require('./tsv').name)\"",
-    "test": "npm run test-csv && npm run test-tsv && npm run test-load",
+    "test-load": "node -e \"console.log(require('./csv').name, require('./psv').name, require('./tsv').name)\"",
+    "test": "npm run test-csv && npm run test-psv && npm run test-tsv && npm run test-load",
     "test-csv": "cd csv && npx tree-sitter test",
+    "test-psv": "cd psv && npx tree-sitter test",
     "test-tsv": "cd tsv && npx tree-sitter test",
-    "test-windows": "pushd csv && npx tree-sitter test && popd && pushd tsv && npx tree-sitter test"
+    "test-windows": "pushd csv && npx tree-sitter test && popd && pushd psv && npx tree-sitter test && popd && pushd tsv && npx tree-sitter test"
   },
   "tree-sitter": [
     {
@@ -41,6 +44,17 @@
         "queries/highlights.scm"
       ],
       "injection-regex": "csv"
+    },
+    {
+      "scope": "source.psv",
+      "file-types": [
+        "psv"
+      ],
+      "path": "psv",
+      "highlights": [
+        "queries/highlights.scm"
+      ],
+      "injection-regex": "psv"
     },
     {
       "scope": "source.tsv",

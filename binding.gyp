@@ -9,7 +9,8 @@
       "sources": [
         "bindings/node/binding.cc",
         "csv/src/parser.c",
-		"tsv/src/parser.c",
+        "psv/src/parser.c",
+        "tsv/src/parser.c",
       ],
       "cflags_c": [
         "-std=c99",

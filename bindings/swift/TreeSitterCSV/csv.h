@@ -8,6 +8,7 @@ extern "C" {
 #endif
 
 extern TSLanguage *tree_sitter_csv();
+extern TSLanguage *tree_sitter_psv();
 extern TSLanguage *tree_sitter_tsv();
 
 #ifdef __cplusplus

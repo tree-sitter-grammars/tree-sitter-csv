@@ -1,5 +1,5 @@
 /**
- * @file CSV & TSV grammar for tree-sitter
+ * @file CSV, PSV, & TSV grammar for tree-sitter
  * @author Amaan Qureshi <amaanq12@gmail.com>
  * @license MIT
  */

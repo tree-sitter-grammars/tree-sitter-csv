@@ -1,6 +1,6 @@
 [package]
 name = "tree-sitter-csv"
-description = "CSV & TSV grammar for tree-sitter"
+description = "CSV, PSV, & TSV grammar for tree-sitter"
 version = "1.0.0"
 authors = ["Amaan Qureshi <amaanq12@gmail.com>"]
 license = "MIT"
