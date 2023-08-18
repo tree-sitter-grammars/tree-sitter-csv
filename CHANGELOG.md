@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/amaanq/tree-sitter-csv/compare/v1.1.0...v1.1.1) (2023-08-18)
+
+
+### Bug Fixes
+
+* don't parse numbers as text ([bf0f53a](https://github.com/amaanq/tree-sitter-csv/commit/bf0f53a6bf4ad1c403d34e281c036abd5996dd7b))
+
 ## [1.1.0](https://github.com/amaanq/tree-sitter-csv/compare/v1.0.0...v1.1.0) (2023-08-17)
 
 
