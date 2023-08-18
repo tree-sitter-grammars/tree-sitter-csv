@@ -116,7 +116,7 @@
         "members": [
           {
             "type": "PATTERN",
-            "value": "[^|\"\\n\\r]+"
+            "value": "[^|\\d\\s\"][^| \\n\\r\"]+"
           },
           {
             "type": "SEQ",
@@ -155,8 +155,17 @@
       "value": "\\d+"
     },
     "float": {
-      "type": "PATTERN",
-      "value": "\\d*\\.\\d+"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "\\d*\\.\\d+"
+        },
+        {
+          "type": "PATTERN",
+          "value": "\\d+\\.\\d*"
+        }
+      ]
     },
     "boolean": {
       "type": "CHOICE",
