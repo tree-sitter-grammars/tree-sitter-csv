@@ -39,7 +39,7 @@ module.exports = function defineGrammar(dialect, separator) {
         new RegExp(`[^${separator}\\d\\s"][^${separator} \\n\\r"]+`),
         seq('"', repeat(choice(/[^"]/, '""')), '"'),
       )),
-      number: _ => /\d+/,
+      number: _ => choice(/\d+/, /0[xX][0-9a-fA-F]+/),
       float: _ => choice(/\d*\.\d+/, /\d+\.\d*/),
       boolean: _ => choice('true', 'false'),
     },

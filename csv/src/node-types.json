@@ -52,6 +52,11 @@
     "fields": {}
   },
   {
+    "type": "number",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "row",
     "named": true,
     "fields": {},
@@ -73,10 +78,6 @@
   {
     "type": "false",
     "named": false
-  },
-  {
-    "type": "number",
-    "named": true
   },
   {
     "type": "text",
