@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/amaanq/tree-sitter-csv/compare/v1.1.1...v1.2.0) (2023-08-31)
+
+
+### Features
+
+* add hex numbers ([6c19574](https://github.com/amaanq/tree-sitter-csv/commit/6c1957405bd6f7751b050f61367f1094fab91444))
+
 ## [1.1.1](https://github.com/amaanq/tree-sitter-csv/compare/v1.1.0...v1.1.1) (2023-08-18)
 
 
