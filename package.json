@@ -32,40 +32,5 @@
     "test-psv": "cd psv && npx tree-sitter test",
     "test-tsv": "cd tsv && npx tree-sitter test",
     "test-windows": "pushd csv && npx tree-sitter test && popd && pushd psv && npx tree-sitter test && popd && pushd tsv && npx tree-sitter test"
-  },
-  "tree-sitter": [
-    {
-      "scope": "source.csv",
-      "file-types": [
-        "csv"
-      ],
-      "path": "csv",
-      "highlights": [
-        "queries/highlights.scm"
-      ],
-      "injection-regex": "csv"
-    },
-    {
-      "scope": "source.psv",
-      "file-types": [
-        "psv"
-      ],
-      "path": "psv",
-      "highlights": [
-        "queries/highlights.scm"
-      ],
-      "injection-regex": "psv"
-    },
-    {
-      "scope": "source.tsv",
-      "file-types": [
-        "tsv"
-      ],
-      "path": "tsv",
-      "highlights": [
-        "queries/highlights.scm"
-      ],
-      "injection-regex": "tsv"
-    }
-  ]
+  }
 }
