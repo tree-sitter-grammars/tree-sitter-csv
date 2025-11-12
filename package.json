@@ -27,10 +27,6 @@
     "build-tsv": "cd tsv && npx tree-sitter generate --no-bindings",
     "lint": "eslint common/define-grammar.js csv/grammar.js tsv/grammar.js",
     "test-load": "node -e \"console.log(require('./csv').name, require('./psv').name, require('./tsv').name)\"",
-    "test": "npm run test-csv && npm run test-psv && npm run test-tsv && npm run test-load",
-    "test-csv": "cd csv && npx tree-sitter test",
-    "test-psv": "cd psv && npx tree-sitter test",
-    "test-tsv": "cd tsv && npx tree-sitter test",
-    "test-windows": "pushd csv && npx tree-sitter test && popd && pushd psv && npx tree-sitter test && popd && pushd tsv && npx tree-sitter test"
+    "test": "npx tree-sitter test"
   }
 }
