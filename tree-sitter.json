@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "version": "1.2.0",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Amaan Qureshi"
+      }
+    ],
+    "description": "CSV, PSV, TSV grammars for tree-sitter",
+    "links": {
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-csv"
+    }
+  },
+  "grammars": [
+    {
+      "name": "csv",
+      "scope": "source.csv",
+      "path": "csv",
+      "injection-regex": "^(csv)$",
+      "file-types": [
+        "csv"
+      ],
+      "highlights": "csv/queries/highlights.scm",
+      "injections": "csv/queries/injections.scm",
+      "external-files": [
+        "common/define-grammar.js"
+      ]
+    },
+    {
+      "name": "psv",
+      "scope": "source.psv",
+      "path": "psv",
+      "injection-regex": "^(psv)$",
+      "file-types": [
+        "psv"
+      ],
+      "highlights": "psv/queries/highlights.scm",
+      "injections": "psv/queries/injections.scm",
+      "external-files": [
+        "common/define-grammar.js"
+      ]
+    },
+    {
+      "name": "tsv",
+      "scope": "source.tsv",
+      "path": "tsv",
+      "injection-regex": "^(tsv)$",
+      "file-types": [
+        "tsv"
+      ],
+      "highlights": "tsv/queries/highlights.scm",
+      "injections": "tsv/queries/injections.scm",
+      "external-files": [
+        "common/define-grammar.js"
+      ]
+    }
+  ]
+}
