@@ -18,7 +18,7 @@
   "devDependencies": {
     "eslint": "^8.47.0",
     "eslint-config-google": "^0.14.0",
-    "tree-sitter-cli": "^0.20.8"
+    "tree-sitter-cli": "^0.25.10"
   },
   "scripts": {
     "build": "npm run build-csv && npm run build-psv && npm run build-tsv",
