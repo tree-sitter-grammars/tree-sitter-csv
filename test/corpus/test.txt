@@ -73,6 +73,19 @@ Numbers at the beginning of text
 
 
 ================================
+Negative numbers
+================================
+-1,-2.3,-0text,-
+--------------------------------
+(document
+	(row
+	  (field (number))
+	  (field (float))
+	  (field (text))
+		(field (text))))
+
+
+================================
 TSV
 :language(tsv)
 ================================
