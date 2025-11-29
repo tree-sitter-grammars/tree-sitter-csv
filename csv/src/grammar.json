@@ -86,11 +86,11 @@
       "members": [
         {
           "type": "PATTERN",
-          "value": "\\d+"
+          "value": "-?\\d+"
         },
         {
           "type": "PATTERN",
-          "value": "0[xX][0-9a-fA-F]+"
+          "value": "-?0[xX][0-9a-fA-F]+"
         }
       ]
     },
@@ -99,11 +99,11 @@
       "members": [
         {
           "type": "PATTERN",
-          "value": "\\d*\\.\\d+"
+          "value": "-?\\d*\\.\\d+"
         },
         {
           "type": "PATTERN",
-          "value": "\\d+\\.\\d*"
+          "value": "-?\\d+\\.\\d*"
         }
       ]
     },
